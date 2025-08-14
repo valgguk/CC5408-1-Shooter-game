@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo2jvrkrocm8m"]
+
+[ext_resource type="Script" uid="uid://d7puv5fpjyot" path="res://ui/game_over.gd" id="1_5eixk"]
+[ext_resource type="Texture2D" uid="uid://d4iqnmxw2mu18" path="res://assets/Mini Pixel Pack 3/Mini Pixel Pack 3/UI objects/GAME_OVER (72 x 8).png" id="1_oo8kp"]
+[ext_resource type="Texture2D" uid="uid://20n82mykw57o" path="res://assets/background/Space Background (2).png" id="3_j1fe5"]
+
+[node name="GameOver" type="PanelContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5eixk")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+position = Vector2(0, 10)
+scale = Vector2(7, 7)
+texture = ExtResource("1_oo8kp")
+
+[node name="SpaceBackground(2)" type="Sprite2D" parent="MarginContainer"]
+show_behind_parent = true
+position = Vector2(4, -668)
+scale = Vector2(3, 3)
+texture = ExtResource("3_j1fe5")

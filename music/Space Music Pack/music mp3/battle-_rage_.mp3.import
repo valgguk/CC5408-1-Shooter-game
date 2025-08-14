@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxj5mdqw6ks6p"
+path="res://.godot/imported/battle-_rage_.mp3-4b1dbed2c4fd07407f3254e676c00b47.mp3str"
+
+[deps]
+
+source_file="res://music/Space Music Pack/music mp3/battle-_rage_.mp3"
+dest_files=["res://.godot/imported/battle-_rage_.mp3-4b1dbed2c4fd07407f3254e676c00b47.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

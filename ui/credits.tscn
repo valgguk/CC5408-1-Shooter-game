@@ -1,0 +1,435 @@
+[gd_scene load_steps=72 format=3 uid="uid://xihy0yf63phi"]
+
+[ext_resource type="Theme" uid="uid://01x65b8cw8j" path="res://resources/theme_menu.tres" id="1_74u3g"]
+[ext_resource type="FontFile" uid="uid://vqmjgeeyxslf" path="res://ui/fonts/phased-1.2/Phased.ttf" id="2_1bagf"]
+[ext_resource type="Script" uid="uid://b6gyscvftwg5g" path="res://ui/credits.gd" id="2_icdkc"]
+[ext_resource type="Texture2D" uid="uid://cv0oauavxten1" path="res://assets/background/Space Background.png" id="3_icdkc"]
+[ext_resource type="Script" uid="uid://d2n5kccg6vax1" path="res://ui/rich_text_label.gd" id="4_icdkc"]
+[ext_resource type="Texture2D" uid="uid://bpp0c1er1kg0n" path="res://assets/planetas/Planets/Lava.png" id="5_n46ei"]
+[ext_resource type="AudioStream" uid="uid://01f6i4hkcnjy" path="res://music/Space Music Pack/music mp3/loading-credits.mp3" id="6_42u7w"]
+[ext_resource type="Texture2D" uid="uid://clwx7buft0gf1" path="res://assets/planetas/Moon/1.png" id="7_blnte"]
+[ext_resource type="Texture2D" uid="uid://ci5uqlfbu7rtn" path="res://assets/planetas/Moon/2.png" id="8_n46ei"]
+[ext_resource type="Texture2D" uid="uid://cb1qfpph2dy4g" path="res://assets/planetas/Moon/3.png" id="9_w3s4h"]
+[ext_resource type="Texture2D" uid="uid://b7ige65sgjjhr" path="res://assets/planetas/Moon/4.png" id="10_axq0e"]
+[ext_resource type="Texture2D" uid="uid://bx6180yg2oku8" path="res://assets/planetas/Moon/5.png" id="11_lciyj"]
+[ext_resource type="Texture2D" uid="uid://8lppnyfs7awu" path="res://assets/planetas/Moon/6.png" id="12_s8vhj"]
+[ext_resource type="Texture2D" uid="uid://uobm6w1aebl" path="res://assets/planetas/Moon/7.png" id="13_h1506"]
+[ext_resource type="Texture2D" uid="uid://bg68045by766n" path="res://assets/planetas/Moon/8.png" id="14_hfg6n"]
+[ext_resource type="Texture2D" uid="uid://bghuvwyxu7x11" path="res://assets/planetas/Moon/9.png" id="15_0xljh"]
+[ext_resource type="Texture2D" uid="uid://djxfr46jjgvs5" path="res://assets/planetas/Moon/10.png" id="16_1xjw0"]
+[ext_resource type="Texture2D" uid="uid://qc7slaiiy3qe" path="res://assets/planetas/Moon/11.png" id="17_sekgs"]
+[ext_resource type="Texture2D" uid="uid://bq81y3xeefth8" path="res://assets/planetas/Moon/12.png" id="18_y1nji"]
+[ext_resource type="Texture2D" uid="uid://bkrm1mqu6a1ye" path="res://assets/planetas/Moon/13.png" id="19_2nb16"]
+[ext_resource type="Texture2D" uid="uid://oft03m82tjfi" path="res://assets/planetas/Moon/14.png" id="20_pwgrv"]
+[ext_resource type="Texture2D" uid="uid://75vglgjk3dfq" path="res://assets/planetas/Moon/15.png" id="21_6tpl7"]
+[ext_resource type="Texture2D" uid="uid://blw2b0c4n2t5a" path="res://assets/planetas/Moon/16.png" id="22_fgfma"]
+[ext_resource type="Texture2D" uid="uid://xn51uh6ax34f" path="res://assets/planetas/Moon/17.png" id="23_oo317"]
+[ext_resource type="Texture2D" uid="uid://bh5yqjstgvns4" path="res://assets/planetas/Moon/18.png" id="24_b2bxp"]
+[ext_resource type="Texture2D" uid="uid://dbkq8vs2132ji" path="res://assets/planetas/Moon/19.png" id="25_bpu54"]
+[ext_resource type="Texture2D" uid="uid://b2icakohoylo3" path="res://assets/planetas/Moon/20.png" id="26_caf18"]
+[ext_resource type="Texture2D" uid="uid://28vw0vcgknik" path="res://assets/planetas/Moon/21.png" id="27_so6v8"]
+[ext_resource type="Texture2D" uid="uid://dnwkgjqje8o6o" path="res://assets/planetas/Moon/22.png" id="28_kbpuo"]
+[ext_resource type="Texture2D" uid="uid://dh4ragbiyv2lj" path="res://assets/planetas/Moon/23.png" id="29_rl6jh"]
+[ext_resource type="Texture2D" uid="uid://bcro74ipgl7wt" path="res://assets/planetas/Moon/24.png" id="30_kyryv"]
+[ext_resource type="Texture2D" uid="uid://t7w7b07ln0hr" path="res://assets/planetas/Moon/25.png" id="31_n240h"]
+[ext_resource type="Texture2D" uid="uid://gqhjaj85q388" path="res://assets/planetas/Moon/26.png" id="32_eloav"]
+[ext_resource type="Texture2D" uid="uid://d2kl7h3k4dgut" path="res://assets/planetas/Moon/27.png" id="33_adr8n"]
+[ext_resource type="Texture2D" uid="uid://o4kf7l010j0a" path="res://assets/planetas/Moon/28.png" id="34_ccg4a"]
+[ext_resource type="Texture2D" uid="uid://b234l5ygdhpnd" path="res://assets/planetas/Moon/29.png" id="35_adp8l"]
+[ext_resource type="Texture2D" uid="uid://dbbmdmpt4b7jb" path="res://assets/planetas/Moon/30.png" id="36_6owkh"]
+[ext_resource type="Texture2D" uid="uid://c2eyopo0y2mif" path="res://assets/planetas/Moon/31.png" id="37_kct2h"]
+[ext_resource type="Texture2D" uid="uid://lq1w66sh8nd1" path="res://assets/planetas/Moon/32.png" id="38_drlev"]
+[ext_resource type="Texture2D" uid="uid://be1r3u1jiglgs" path="res://assets/planetas/Moon/33.png" id="39_qd6n8"]
+[ext_resource type="Texture2D" uid="uid://xfbwyjjycxod" path="res://assets/planetas/Moon/34.png" id="40_kr5s1"]
+[ext_resource type="Texture2D" uid="uid://imseoi7nernp" path="res://assets/planetas/Moon/35.png" id="41_7ylx2"]
+[ext_resource type="Texture2D" uid="uid://cjksvo513pih8" path="res://assets/planetas/Moon/36.png" id="42_n0a63"]
+[ext_resource type="Texture2D" uid="uid://boc6adxn5rrnn" path="res://assets/planetas/Moon/37.png" id="43_emfhh"]
+[ext_resource type="Texture2D" uid="uid://sv1trp4vn2o0" path="res://assets/planetas/Moon/38.png" id="44_2voec"]
+[ext_resource type="Texture2D" uid="uid://ro0shawbw4lm" path="res://assets/planetas/Moon/39.png" id="45_td53d"]
+[ext_resource type="Texture2D" uid="uid://5hmgy5j002dl" path="res://assets/planetas/Moon/40.png" id="46_kymvf"]
+[ext_resource type="Texture2D" uid="uid://bd200sy28e414" path="res://assets/planetas/Moon/41.png" id="47_qdmpt"]
+[ext_resource type="Texture2D" uid="uid://c7vf774mftbfk" path="res://assets/planetas/Moon/42.png" id="48_yhlvv"]
+[ext_resource type="Texture2D" uid="uid://fwjmi5604o0l" path="res://assets/planetas/Moon/43.png" id="49_bjwjy"]
+[ext_resource type="Texture2D" uid="uid://bhr83weeqnxs2" path="res://assets/planetas/Moon/44.png" id="50_iarao"]
+[ext_resource type="Texture2D" uid="uid://g7rqwi3ow1vv" path="res://assets/planetas/Moon/45.png" id="51_vpt4u"]
+[ext_resource type="Texture2D" uid="uid://cu6g3scg0ieu" path="res://assets/planetas/Moon/46.png" id="52_wrdos"]
+[ext_resource type="Texture2D" uid="uid://c0uqkol4kohqd" path="res://assets/planetas/Moon/47.png" id="53_r3tlw"]
+[ext_resource type="Texture2D" uid="uid://c6uihb7ujfb7w" path="res://assets/planetas/Moon/48.png" id="54_mcx67"]
+[ext_resource type="Texture2D" uid="uid://cn6yc5h47w4i4" path="res://assets/planetas/Moon/49.png" id="55_baljj"]
+[ext_resource type="Texture2D" uid="uid://bv3oqnmmsokps" path="res://assets/planetas/Moon/50.png" id="56_0vkx6"]
+[ext_resource type="Texture2D" uid="uid://i4m0by4n32sr" path="res://assets/planetas/Moon/51.png" id="57_kxftm"]
+[ext_resource type="Texture2D" uid="uid://wbrw38x8atm6" path="res://assets/planetas/Moon/52.png" id="58_qvqok"]
+[ext_resource type="Texture2D" uid="uid://bkca7u36u7o23" path="res://assets/planetas/Moon/53.png" id="59_y00ju"]
+[ext_resource type="Texture2D" uid="uid://omf5ar4akwj2" path="res://assets/planetas/Moon/54.png" id="60_xoesc"]
+[ext_resource type="Texture2D" uid="uid://dpbs7abbusoha" path="res://assets/planetas/Moon/55.png" id="61_fh4hq"]
+[ext_resource type="Texture2D" uid="uid://db78l1wbsdqjs" path="res://assets/planetas/Moon/56.png" id="62_wy8f3"]
+[ext_resource type="Texture2D" uid="uid://cd8sfny07jds7" path="res://assets/planetas/Moon/57.png" id="63_60lt2"]
+[ext_resource type="Texture2D" uid="uid://bsqfxwuo121vx" path="res://assets/planetas/Moon/58.png" id="64_ulixg"]
+[ext_resource type="Texture2D" uid="uid://xqos0wfi2xt8" path="res://assets/planetas/Moon/59.png" id="65_py5s1"]
+[ext_resource type="Texture2D" uid="uid://5ghe6nsdfqip" path="res://assets/planetas/Moon/60.png" id="66_068uq"]
+[ext_resource type="Texture2D" uid="uid://dq1i6hpep7f4j" path="res://assets/planetas/Planets/Terran.png" id="67_w3s4h"]
+[ext_resource type="Texture2D" uid="uid://c0hwuthinglqd" path="res://assets/planetas/Planets/Black_hole.png" id="68_axq0e"]
+
+[sub_resource type="Theme" id="Theme_1bagf"]
+default_font = ExtResource("2_1bagf")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uy2hg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_blnte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_n46ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_n46ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_w3s4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_axq0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lciyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_s8vhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_h1506")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hfg6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0xljh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_1xjw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_sekgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_y1nji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2nb16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_pwgrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6tpl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fgfma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_oo317")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_b2bxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_bpu54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_caf18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_so6v8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_kbpuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_rl6jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_kyryv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_n240h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_eloav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_adr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ccg4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_adp8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_6owkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_kct2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_drlev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_qd6n8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_kr5s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_7ylx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_n0a63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_emfhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_2voec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_td53d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_kymvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_qdmpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_yhlvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_bjwjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_iarao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_vpt4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_wrdos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_r3tlw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_mcx67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_baljj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_0vkx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_kxftm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_qvqok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_y00ju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_xoesc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_fh4hq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_wy8f3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_60lt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_ulixg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_py5s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_068uq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_74u3g")
+script = ExtResource("2_icdkc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -574.0
+offset_top = -353.0
+offset_right = 574.0
+offset_bottom = 1198.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_1bagf")
+theme_override_font_sizes/bold_italics_font_size = 70
+theme_override_font_sizes/italics_font_size = 70
+theme_override_font_sizes/mono_font_size = 70
+theme_override_font_sizes/normal_font_size = 70
+theme_override_font_sizes/bold_font_size = 70
+bbcode_enabled = true
+text = "[center]
+[wave amp=50]
+Credits
+
+Battle Space"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_icdkc")
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_74u3g")
+theme_override_font_sizes/font_size = 50
+text = "Alan Brito"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "(beta)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "by valgguk"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 70
+theme_override_font_sizes/italics_font_size = 70
+theme_override_font_sizes/mono_font_size = 70
+theme_override_font_sizes/normal_font_size = 70
+theme_override_font_sizes/bold_font_size = 70
+bbcode_enabled = true
+text = "[center]
+[shake]
+[font_size=30]
+Mini Pixel Pack 3
+by GrafxKid
+
+Space Music Pack
+by gooseninja
+
+Pixel Space Background Generator
+by deep-fold
+
+Free Lunar Battle Pack
+by mattwalkden
+
+250+ Pixel art planets,
+25 Spinning planets (48x48px)
+by helianthus-games
+
+Free Celestial Objects Pixel Art Pack
+by norma-2d
+
+DUNGEON.mode
+by datagoblin
+
+PHASED: A Pixel and Vector Font
+by little-martian
+
+8-bit / 16-bit Sound Effects (x25) Pack
+by jdwasabi"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_icdkc")
+
+[node name="Node" type="Node" parent="VBoxContainer"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 0.631373, 1)
+show_behind_parent = true
+position = Vector2(544, 62)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_uy2hg")
+autoplay = "default"
+frame = 57
+frame_progress = 0.0206838
+
+[node name="SpaceBackground" type="Sprite2D" parent="AnimatedSprite2D"]
+show_behind_parent = true
+position = Vector2(-108.8, -12.4)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_icdkc")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatedSprite2D"]
+modulate = Color(1, 1, 1, 0.780392)
+show_behind_parent = true
+position = Vector2(-230.6, -17.4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_n46ei")
+
+[node name="Sprite2D2" type="Sprite2D" parent="AnimatedSprite2D"]
+position = Vector2(-16.6, 91.2)
+scale = Vector2(2, 2)
+texture = ExtResource("67_w3s4h")
+
+[node name="BlackHole" type="Sprite2D" parent="AnimatedSprite2D"]
+position = Vector2(-208.4, -68.8)
+texture = ExtResource("68_axq0e")
+
+[node name="CreditsMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_42u7w")
+autoplay = true
+bus = &"Menu + Cred"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -565.0
+offset_top = -308.0
+offset_right = -415.0
+offset_bottom = -264.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 0
+text = "Back"
+
+[node name="Node" type="Node" parent="."]

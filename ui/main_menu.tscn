@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://dcfughyfide52"]
+
+[ext_resource type="Theme" uid="uid://01x65b8cw8j" path="res://resources/theme_menu.tres" id="1_0dkrt"]
+[ext_resource type="FontFile" uid="uid://vqmjgeeyxslf" path="res://ui/fonts/phased-1.2/Phased.ttf" id="1_t7e0r"]
+[ext_resource type="Script" uid="uid://blghaaswh1fo3" path="res://ui/main_menu.gd" id="2_wk0pr"]
+[ext_resource type="Texture2D" uid="uid://bcueurk7jcgfn" path="res://assets/Mini Pixel Pack 3/Mini Pixel Pack 3/UI objects/START (48 x 8).png" id="4_rmr83"]
+[ext_resource type="Texture2D" uid="uid://b82mlx65fs155" path="res://assets/background/Space Background (1).png" id="5_8uxxo"]
+[ext_resource type="AudioStream" uid="uid://bw4suo85ym8wi" path="res://music/Space Music Pack/music mp3/menu.mp3" id="6_ei257"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wk0pr"]
+font = ExtResource("1_t7e0r")
+font_size = 40
+
+[node name="MainMenu" type="MarginContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.5
+offset_top = -41.5
+offset_right = 30.5
+offset_bottom = 41.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_0dkrt")
+script = ExtResource("2_wk0pr")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+process_mode = 3
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+modulate = Color(0.42749, 0.864292, 0.337815, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Alan Brito"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Battle Space"
+label_settings = SubResource("LabelSettings_wk0pr")
+horizontal_alignment = 1
+
+[node name="Start" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "
+"
+icon = ExtResource("4_rmr83")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Quit" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"
+
+[node name="Credits" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Credits"
+
+[node name="Controls" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Game Guide"
+
+[node name="SpaceBackground(1)" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(206.5, 114)
+scale = Vector2(2, 2)
+texture = ExtResource("5_8uxxo")
+metadata/_edit_lock_ = true
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_ei257")
+autoplay = true
+bus = &"Menu + Cred"

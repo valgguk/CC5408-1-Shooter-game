@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo1iv3m5xeybh"]
+
+[ext_resource type="Script" uid="uid://tv88pe0ddjbh" path="res://Scenes/bullet_player.gd" id="1_4qi73"]
+[ext_resource type="Texture2D" uid="uid://7hceklphq1mr" path="res://assets/Mini Pixel Pack 3/Mini Pixel Pack 3/Projectiles/Player_charged_beam (16 x 16).png" id="2_xupnh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4qi73"]
+radius = 2.0
+height = 8.0
+
+[node name="BulletPlayer" type="Area2D"]
+scale = Vector2(2, 2)
+collision_layer = 9
+collision_mask = 5
+script = ExtResource("1_4qi73")
+metadata/_custom_type_script = "uid://bj2gucpajn8a7"
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xupnh")
+hframes = 4
+frame = 1
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_4qi73")
+debug_color = Color(0.217413, 0.639277, 1.92523e-07, 0.42)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true

@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=3 uid="uid://dtkhd0c13rdh8"]
+
+[ext_resource type="Script" uid="uid://bkj702j1s2ehp" path="res://ui/control.gd" id="1_sm8s4"]
+[ext_resource type="FontFile" uid="uid://vqmjgeeyxslf" path="res://ui/fonts/phased-1.2/Phased.ttf" id="1_sq3tw"]
+[ext_resource type="Script" uid="uid://d2n5kccg6vax1" path="res://ui/rich_text_label.gd" id="2_rwsqr"]
+[ext_resource type="AudioStream" uid="uid://01f6i4hkcnjy" path="res://music/Space Music Pack/music mp3/loading-credits.mp3" id="3_qh227"]
+[ext_resource type="Texture2D" uid="uid://20n82mykw57o" path="res://assets/background/Space Background (2).png" id="4_2mc8b"]
+[ext_resource type="Theme" uid="uid://01x65b8cw8j" path="res://resources/theme_menu.tres" id="4_sm8s4"]
+
+[sub_resource type="Theme" id="Theme_qh227"]
+default_font = ExtResource("1_sq3tw")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_sm8s4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -574.0
+offset_top = -353.0
+offset_right = 574.0
+offset_bottom = 1198.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_sm8s4")
+theme_override_font_sizes/font_size = 70
+text = "How to Play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_qh227")
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+text = "[center]
+[shake]
+Move: Left / Right Arrows or A / D
+Shoot: Space
+Pause: ESC (Open Pause Menu)
+
+{If you die, press ESC to open the Pause Menu and restart the game.}"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_rwsqr")
+
+[node name="CreditsMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qh227")
+autoplay = true
+bus = &"Menu + Cred"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.0
+offset_top = 188.0
+offset_right = 89.0
+offset_bottom = 232.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_sm8s4")
+theme_override_font_sizes/font_size = 0
+text = "Back"
+alignment = 0
+
+[node name="SpaceBackground(2)" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(4, -668)
+scale = Vector2(3, 3)
+texture = ExtResource("4_2mc8b")

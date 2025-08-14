@@ -1,0 +1,154 @@
+[gd_scene load_steps=8 format=3 uid="uid://1eg76ps5jq2s"]
+
+[ext_resource type="PackedScene" uid="uid://d0e0od7tvlyay" path="res://Scenes/player.tscn" id="2_dc1x8"]
+[ext_resource type="PackedScene" uid="uid://8bku0spf6sis" path="res://ui/pause_menu.tscn" id="2_dgjcf"]
+[ext_resource type="PackedScene" uid="uid://boxhvnw47sd22" path="res://Scenes/begin_mundo.tscn" id="2_ey8ns"]
+[ext_resource type="PackedScene" uid="uid://bjgdgcon502eq" path="res://Scenes/Enemies/alan_enemy.tscn" id="3_ey8ns"]
+[ext_resource type="PackedScene" uid="uid://2rniuvsgoahs" path="res://Scenes/Enemies/bonbon_enemy.tscn" id="4_5xkr0"]
+[ext_resource type="PackedScene" uid="uid://me2qofdvddsc" path="res://Scenes/Enemies/lips_enemy.tscn" id="5_bj26p"]
+[ext_resource type="AudioStream" uid="uid://3suwbg601j20" path="res://music/Space Music Pack/music mp3/meet-the-princess-nivel.mp3" id="6_ly74u"]
+
+[node name="Nivel" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_dc1x8")]
+position = Vector2(0, -200)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -396)
+metadata/_edit_lock_ = true
+
+[node name="begin_mundo" parent="." instance=ExtResource("2_ey8ns")]
+show_behind_parent = true
+scale = Vector2(3, 3)
+
+[node name="enemigos 1 fila" type="Node2D" parent="."]
+
+[node name="LipsEnemy2" parent="enemigos 1 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(224, -544)
+
+[node name="LipsEnemy" parent="enemigos 1 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(-224, -544)
+
+[node name="AlanEnemy" parent="enemigos 1 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(-129, -546)
+
+[node name="BonbonEnemy" parent="enemigos 1 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(-320, -544)
+
+[node name="AlanEnemy2" parent="enemigos 1 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(0, -546)
+scale = Vector2(2, 2)
+
+[node name="BonbonEnemy2" parent="enemigos 1 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(320, -544)
+
+[node name="AlanEnemy3" parent="enemigos 1 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(128, -546)
+
+[node name="enemigos 2 fila" type="Node2D" parent="."]
+
+[node name="LipsEnemy" parent="enemigos 2 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(-65, -640)
+metadata/_edit_lock_ = true
+
+[node name="LipsEnemy2" parent="enemigos 2 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(65, -640)
+metadata/_edit_lock_ = true
+
+[node name="BonbonEnemy" parent="enemigos 2 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(-180, -642)
+metadata/_edit_lock_ = true
+
+[node name="BonbonEnemy2" parent="enemigos 2 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(176, -640)
+metadata/_edit_lock_ = true
+
+[node name="LipsEnemy3" parent="enemigos 2 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(-272, -640)
+metadata/_edit_lock_ = true
+
+[node name="LipsEnemy4" parent="enemigos 2 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(272, -640)
+metadata/_edit_lock_ = true
+
+[node name="AlanEnemy" parent="enemigos 2 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(-384, -642)
+
+[node name="AlanEnemy2" parent="enemigos 2 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(384, -640)
+
+[node name="enemigos 3 fila" type="Node2D" parent="."]
+
+[node name="LipsEnemy" parent="enemigos 3 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(-320, -730)
+scale = Vector2(2, 2)
+metadata/_edit_lock_ = true
+
+[node name="LipsEnemy2" parent="enemigos 3 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(334, -724)
+scale = Vector2(2, 2)
+metadata/_edit_lock_ = true
+
+[node name="LipsEnemy3" parent="enemigos 3 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(-192, -724)
+metadata/_edit_lock_ = true
+
+[node name="LipsEnemy4" parent="enemigos 3 fila" instance=ExtResource("5_bj26p")]
+position = Vector2(192, -726)
+metadata/_edit_lock_ = true
+
+[node name="BonbonEnemy" parent="enemigos 3 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(-93, -724)
+metadata/_edit_lock_ = true
+
+[node name="BonbonEnemy2" parent="enemigos 3 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(90, -724)
+metadata/_edit_lock_ = true
+
+[node name="BonbonEnemy3" parent="enemigos 3 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(0, -724)
+metadata/_edit_lock_ = true
+
+[node name="enemigos 4 fila" type="Node2D" parent="."]
+
+[node name="AlanEnemy" parent="enemigos 4 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(-241, -832)
+scale = Vector2(1.3, 1.3)
+
+[node name="AlanEnemy2" parent="enemigos 4 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(247, -832)
+scale = Vector2(1.3, 1.3)
+
+[node name="AlanEnemy3" parent="enemigos 4 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(-128, -832)
+
+[node name="AlanEnemy4" parent="enemigos 4 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(126, -832)
+
+[node name="AlanEnemy5" parent="enemigos 4 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(-33, -832)
+
+[node name="AlanEnemy6" parent="enemigos 4 fila" instance=ExtResource("3_ey8ns")]
+position = Vector2(36, -832)
+
+[node name="BonbonEnemy" parent="enemigos 4 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(-380, -832)
+metadata/_edit_lock_ = true
+
+[node name="BonbonEnemy2" parent="enemigos 4 fila" instance=ExtResource("4_5xkr0")]
+position = Vector2(383, -832)
+metadata/_edit_lock_ = true
+
+[node name="NivelMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_ly74u")
+autoplay = true
+bus = &"Music"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("2_dgjcf")]
+offset_left = -138.0
+offset_top = -204.0
+offset_right = 143.0
+offset_bottom = 129.0
+metadata/_edit_use_anchors_ = true
